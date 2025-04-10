@@ -50,6 +50,10 @@ AetherShell is an intelligent terminal assistant built to interact with your Win
 - "Show me files modified in the last 2 days"
 - "Open my Downloads folder"
 - "Find the largest 3 images on my Desktop"
+  
+- ![image](https://github.com/user-attachments/assets/2e38898c-b3ed-40f4-95f3-b3babc3deed1)
+- An example use of this program which helped me setup a shortcut script for this AetherShell
+
 
 ---
 
