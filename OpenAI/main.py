@@ -107,7 +107,7 @@ def feedback_loop(initial_request, max_rounds=5):
                 break
             previous_questions.add(ai_response)
             print(f" Aether needs clarification:\n{ai_response}")
-            clarification = input("✍️ Your clarification: ")
+            clarification = input(" Your clarification: ")
             continue
 
         if ai_response.strip().lower() == "done":
@@ -121,7 +121,7 @@ def feedback_loop(initial_request, max_rounds=5):
         else:
             print(f"\n Output:\n{last_output[:1000]}")
 
-    print("💡 Loop complete.")
+    print(" Loop complete.")
 
 
 if __name__ == "__main__":
