@@ -98,28 +98,28 @@ def feedback_loop(initial_request, max_rounds=5):
     previous_questions = set()
 
     for round_num in range(max_rounds):
-        print(f"\n🧠 ROUND {round_num + 1}: Asking AI...\n")
+        print(f"\n ROUND {round_num + 1}: Asking Aether...\n")
         ai_response = clean_response(ask_chatgpt(prompt, context=last_output, clarification=clarification))
 
         if "?" in ai_response and not ai_response.lower().startswith("get-"):
             if ai_response in previous_questions:
-                print("🔁 AI is repeating a question — stopping loop.")
+                print("🔁 Aether is repeating a question — stopping loop.")
                 break
             previous_questions.add(ai_response)
-            print(f"🧠 AI needs clarification:\n{ai_response}")
+            print(f" Aether needs clarification:\n{ai_response}")
             clarification = input("✍️ Your clarification: ")
             continue
 
         if ai_response.strip().lower() == "done":
-            print("✅ AI believes the task is complete.")
+            print(" Aether believes the task is complete.")
             break
 
         last_output = run_powershell(ai_response)
 
         if "[ERROR]" in last_output or "timed out" in last_output.lower():
-            print(f"⚠️ Error detected:\n{last_output}")
+            print(f" Error detected:\n{last_output}")
         else:
-            print(f"\n📄 Output:\n{last_output[:1000]}")
+            print(f"\n Output:\n{last_output[:1000]}")
 
     print("💡 Loop complete.")
 
@@ -127,6 +127,6 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         user_request = " ".join(sys.argv[1:])
     else:
-        user_request = input("What would you like the AI to do?\n> ")
+        user_request = input(" What would you like Aether to do?\n> ")
 
     feedback_loop(user_request)
