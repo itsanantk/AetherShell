@@ -1,12 +1,12 @@
 # ⚡ AetherShell
 
-> AI-Powered PowerShell Assistant — driven by ChatGPT and crafted for seamless system navigation, automation, and interaction.
+> AI-Powered PowerShell Assistant — crafted for seamless system navigation, automation, and interaction.
 
 ---
 
 ## 📌 Description
 
-AetherShell is an intelligent terminal assistant built to interact with your Windows system through PowerShell commands, guided by GPT-based AI. It dynamically analyzes user requests, refines system queries, and executes PowerShell commands while learning from context — all while prioritizing safety and flexibility.
+AetherShell is an intelligent terminal assistant built to interact with your Windows system through PowerShell commands and AI. It dynamically analyzes user requests, refines system queries, and executes PowerShell commands while learning from context — all while prioritizing safety and flexibility.
 
 ---
 
@@ -16,8 +16,6 @@ AetherShell is an intelligent terminal assistant built to interact with your Win
 - 🔁 Feedback loop: auto-corrects failed commands or asks for clarification
 - 🔐 Detects and warns about dangerous system commands
 - 🧠 Context memory chaining for better understanding
-- 🔌 Built-in plugin/tool awareness (like finding your Desktop/Pictures path)
-- 💡 Plugin-Calling Readiness for future expansion
 
 ---
 
@@ -52,7 +50,6 @@ AetherShell is an intelligent terminal assistant built to interact with your Win
 - "Show me files modified in the last 2 days"
 - "Open my Downloads folder"
 - "Find the largest 3 images on my Desktop"
-- "Create an event in my calendar for April 10th at 5 PM"
 
 ---
 
