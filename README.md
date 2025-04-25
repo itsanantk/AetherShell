@@ -40,7 +40,7 @@ AetherShell is an intelligent terminal assistant built to interact with your Win
 
 4. Run the assistant:
    ```bash
-   python Looping.py
+   python main.py
    ```
 
 ---
